@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather detector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="body-content">
+        <h1>Weather Detector</h1>
+        <div class="search-c">
+            <div class="search-container">
+                <input class="search" name="search" id="search" placeholder="Search for city...">
+                <i id="search-icon" onclick="getweather()" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+       
+        <section class="container">
+            <section class="top-container">
+                <div class="curent-weater">
+                    <div class="curent-weather-top" id="curent-weather">
+                        <h3>Current Weather</h3>
+                        <h4 id="time"></h4>
+                    </div>
+
+                    <div class="curent-weather-body">
+                        <div id="weather-icon1">
+                            <img  src="icons/cloudy.png" alt="" srcset="">
+                        </div>
+                        <div class="current-sub">
+                            <h1 id="temp">25&deg;C</h1>
+                            <h4 id="weatherr">Heavy Rain</h4>
+                        </div>
+                    </div>
+
+                    <div class="curent-bottom">
+                        <span>
+                            <i class="fa-solid fa-water"></i>
+                            <h5 id="water-wave">173</h5>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-wind"></i>
+                            <h5 id="wind">92%</h5>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-droplet"></i>
+                            <h5 id="rainfall-rate">___</h5>
+                        </span>               
+                        
+                    </div>
+                    
+
+                </div>
+
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.13131208712!2d80.04419850580796!3d13.047473316433955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1734179106767!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
+                </div>
+
+                <div class="popular-cities">
+                    <div class="cities-head">
+                        <h3>Popular cities</h3>
+                        <h3>Weather</h3>
+                    </div>
+                    <div class="cities-body" id="popular-cities-weather">
+                        
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <section class="bottom-container">
+                <div class="forecast">
+                    <div>
+                        <h3>Forecast</h3>
+                        <h4>4 Days</h4>
+                    </div>
+                    
+                    <div id="nextdayforecast">
+
+                    </div>
+
+                </div>
+                <div class="hourly-Forecast">
+                    <div class="hourforecast-title" id="hourforecast-title">
+                        <h3>Summery</h3>
+                    </div>
+                    <div id="hourforecast">
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

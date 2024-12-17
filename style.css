@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: whitesmoke;
+    background: linear-gradient(#1C2B3C,#1C2B3C,#87CEEB);
+    background-repeat: no-repeat;
+
+}
+.body-content{
+    margin:20px 80px;
+    width: 80%;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.23);
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+.headder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Search container */
+.search-container {
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    align-items: center; /* Vertically align the input and icon */
+    position: relative;
+    background-color: #ffffff34;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search input styling */
+.search-c{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.search {
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    width: 100%; /* Adjust width as per your design */
+    background-color: #ffffff00;
+    color: white;
+}
+
+/* Placeholder text */
+.search::placeholder {
+    color: #b3b2b2;
+}
+
+/* Search icon styling */
+#search-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #d5d5d5; /* Icon color */
+    position: absolute;
+    right: 10px; /* Position the icon on the right side of the input */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+#search-icon:hover {
+    transform: scale(1.2); 
+}
+.top-container{
+    display: flex;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.812)
+}
+.curent-weater{
+    padding: 20px;
+    margin: 10px;
+    display: inline;
+    width: 300px;
+    height: 225px;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+
+}
+.curent-weather-top{
+    display: flex;
+}
+.curent-weather-top h4{
+    color: rgba(255, 255, 255, 0.812);
+    margin-left:20%;
+}
+.curent-weather-body{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.curent-weather-body img{
+    margin-right: 30px;
+    height: 80px;
+    width: 80px;
+}
+.curent-bottom{
+    display: flex;
+    flex-direction: row;
+}
+.curent-bottom span{
+    margin: 20px;
+}
+.location iframe{
+    width: 500px;
+    margin: 10px;
+    height: 265px;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+
+}
+.popular-cities{
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 225px;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+}
+
+.popular-cities .cities-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.popular-cities .cities-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.popular-cities .cities-body span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.popular-cities .cities-body span div{
+    display: flex;
+}
+
+
+.popular-cities .cities-body span div h3{
+    padding-top:10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.popular-cities .cities-body span div img{
+    height: 40px;
+    width: 40px;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: row;
+}
+.forecast{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+    margin:10px ;
+    width: 300px;
+    height: 225px;
+}
+.forecast div{
+    display: flex;
+    flex-direction: row;
+    
+}
+.forecast div h4{
+    margin-left: 27%;
+}
+
+#nextdayforecast{
+    display: flex;
+    flex-direction: column;
+}
+.weather-item{
+    display: flex;
+    padding: 0;
+    margin-left: 5px;
+}
+.weather-item img {
+    width: 40px;
+    height: 40px;
+}
+.weather-item div{
+    display: flex;
+    margin-top: 10px;
+}
+.weather-item div .date{
+    right: 5px;
+}
+.hourly-Forecast{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 10px;
+    margin:10px ;
+    width: 900px;
+}
+.hourforecast-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+#hourforecast{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.hourly-item{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.hourly-item img{
+    margin: 20px 0px;
+    
+}
